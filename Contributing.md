@@ -2,7 +2,7 @@
 
 ## 1. Search for Duplicates
 
-[Search the existing issues](https://github.com/Microsoft/BotBuilder/issues?utf8=%E2%9C%93&q=is%3Aissue) before logging a new one.
+[Search the existing issues](https://github.com/Microsoft/BotBuilder-Calling/issues) before logging a new one.
 
 ## 2. Do you have a question?
 

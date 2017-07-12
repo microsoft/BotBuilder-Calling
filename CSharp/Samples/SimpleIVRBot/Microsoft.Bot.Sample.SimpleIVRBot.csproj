@@ -50,11 +50,31 @@
       <HintPath>..\..\packages\Autofac.3.5.2\lib\net40\Autofac.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="Chronic, Version=0.3.2.0, Culture=neutral, PublicKeyToken=3bd1f1ef638b0d3c, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Chronic.Signed.0.3.2\lib\net40\Chronic.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Bot.Builder, Version=3.8.2.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.Bot.Builder.3.8.2.0\lib\net46\Microsoft.Bot.Builder.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Bot.Builder.Autofac, Version=3.8.2.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.Bot.Builder.3.8.2.0\lib\net46\Microsoft.Bot.Builder.Autofac.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Bot.Connector, Version=3.8.2.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.Bot.Builder.3.8.2.0\lib\net46\Microsoft.Bot.Connector.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.IdentityModel.Protocol.Extensions, Version=1.0.40306.1554, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.IdentityModel.Protocol.Extensions.1.0.4.403061554\lib\net45\Microsoft.IdentityModel.Protocol.Extensions.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="Microsoft.Rest.ClientRuntime, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\..\packages\Microsoft.Rest.ClientRuntime.2.3.2\lib\net45\Microsoft.Rest.ClientRuntime.dll</HintPath>
       <Private>True</Private>
@@ -68,6 +88,10 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.IdentityModel.Tokens.Jwt, Version=4.0.40306.1554, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\System.IdentityModel.Tokens.Jwt.4.0.4.403061554\lib\net45\System.IdentityModel.Tokens.Jwt.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System.Net" />
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Net.Http.Formatting, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
@@ -125,21 +149,9 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\Library\Microsoft.Bot.Builder.Autofac\Microsoft.Bot.Builder.Autofac.csproj">
-      <Project>{2c145824-38dd-409c-ab52-b3538997726c}</Project>
-      <Name>Microsoft.Bot.Builder.Autofac</Name>
-    </ProjectReference>
     <ProjectReference Include="..\..\Library\Microsoft.Bot.Builder.Calling\Microsoft.Bot.Builder.Calling.csproj">
       <Project>{cebd91e9-cdbd-4cc2-adc1-8a5b626ce0ce}</Project>
       <Name>Microsoft.Bot.Builder.Calling</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\Library\Microsoft.Bot.Builder\Microsoft.Bot.Builder.csproj">
-      <Project>{cdfec7d6-847e-4c13-956b-0a960ae3eb60}</Project>
-      <Name>Microsoft.Bot.Builder</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\Library\Microsoft.Bot.Connector.NetFramework\Microsoft.Bot.Connector.csproj">
-      <Project>{df397efc-91db-4911-9971-c509926fc288}</Project>
-      <Name>Microsoft.Bot.Connector</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>

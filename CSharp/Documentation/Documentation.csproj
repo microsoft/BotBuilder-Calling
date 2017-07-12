@@ -63,34 +63,13 @@
     <Content Include="header.html" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="overview.cs" />
-  </ItemGroup>
-  <ItemGroup>
     <ProjectReference Include="..\Library\Microsoft.Bot.Builder.Calling\Microsoft.Bot.Builder.Calling.csproj">
       <Project>{cebd91e9-cdbd-4cc2-adc1-8a5b626ce0ce}</Project>
       <Name>Microsoft.Bot.Builder.Calling</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Library\Microsoft.Bot.Builder\Microsoft.Bot.Builder.csproj">
-      <Project>{cdfec7d6-847e-4c13-956b-0a960ae3eb60}</Project>
-      <Name>Microsoft.Bot.Builder</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Library\Microsoft.Bot.Builder.FormFlow.Json\Microsoft.Bot.Builder.FormFlow.Json.csproj">
-      <Project>{8674f271-4437-4178-b4e2-15f91b322e5d}</Project>
-      <Name>Microsoft.Bot.Builder.FormFlow.Json</Name>
-    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="StateAPI.cs" />
-    <Compile Include="Channels.cs" />
-    <Compile Include="Attachments.cs" />
-    <Compile Include="calling.cs" />
-    <Compile Include="connector.cs" />
-    <Compile Include="dialogs.cs" />
-    <Compile Include="forms.cs" />
-    <Compile Include="GettingStarted.cs" />
-    <Compile Include="Conventions.cs" />
-    <Compile Include="Activities.cs" />
-    <Compile Include="Routing.cs" />
+    <Compile Include="Overview.cs" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.6">

@@ -1,0 +1,82 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Samples", "Samples", "{FAEFFF66-7944-48F4-972A-9A1C13A5C206}"
+	ProjectSection(SolutionItems) = preProject
+		Samples\README.md = Samples\README.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Framework", "Framework", "{28BCEB2C-F4BE-416D-A4FD-A311E99A9EB5}"
+	ProjectSection(SolutionItems) = preProject
+		Library\createallpackages.cmd = Library\createallpackages.cmd
+		Library\pushpackages.cmd = Library\pushpackages.cmd
+		Library\README.md = Library\README.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{8E05398E-3CBE-4DCD-9382-072DC8859427}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Documentation", "Documentation", "{8B80380D-BA94-4257-842B-D8BC185EDEA5}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Documentation", "Documentation\Documentation.csproj", "{72C60ACB-4804-4584-AD49-00289A89F227}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tools", "Tools", "{797080F6-66BB-4B09-A202-1A0704E36503}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RView", "Tools\RView\RView.csproj", "{12CAE029-7B8D-4928-8504-28746C36ADB3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ResXToXlf", "Tools\ResXToXlf\ResXToXlf.csproj", "{D4902CFE-78ED-4BE7-898F-32ACAD46B4AC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Microsoft.Bot.Builder.Calling", "Library\Microsoft.Bot.Builder.Calling\Microsoft.Bot.Builder.Calling.csproj", "{CEBD91E9-CDBD-4CC2-ADC1-8A5B626CE0CE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Microsoft.Bot.Sample.SimpleIVRBot", "Samples\SimpleIVRBot\Microsoft.Bot.Sample.SimpleIVRBot.csproj", "{C4D4530F-3194-48D5-9A94-A5C068616471}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Documentation|Any CPU = Documentation|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{72C60ACB-4804-4584-AD49-00289A89F227}.Debug|Any CPU.ActiveCfg = Documentation|Any CPU
+		{72C60ACB-4804-4584-AD49-00289A89F227}.Documentation|Any CPU.ActiveCfg = Documentation|Any CPU
+		{72C60ACB-4804-4584-AD49-00289A89F227}.Documentation|Any CPU.Build.0 = Documentation|Any CPU
+		{72C60ACB-4804-4584-AD49-00289A89F227}.Release|Any CPU.ActiveCfg = Documentation|Any CPU
+		{12CAE029-7B8D-4928-8504-28746C36ADB3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{12CAE029-7B8D-4928-8504-28746C36ADB3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{12CAE029-7B8D-4928-8504-28746C36ADB3}.Documentation|Any CPU.ActiveCfg = Release|Any CPU
+		{12CAE029-7B8D-4928-8504-28746C36ADB3}.Documentation|Any CPU.Build.0 = Release|Any CPU
+		{12CAE029-7B8D-4928-8504-28746C36ADB3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{12CAE029-7B8D-4928-8504-28746C36ADB3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D4902CFE-78ED-4BE7-898F-32ACAD46B4AC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D4902CFE-78ED-4BE7-898F-32ACAD46B4AC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D4902CFE-78ED-4BE7-898F-32ACAD46B4AC}.Documentation|Any CPU.ActiveCfg = Release|Any CPU
+		{D4902CFE-78ED-4BE7-898F-32ACAD46B4AC}.Documentation|Any CPU.Build.0 = Release|Any CPU
+		{D4902CFE-78ED-4BE7-898F-32ACAD46B4AC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D4902CFE-78ED-4BE7-898F-32ACAD46B4AC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CEBD91E9-CDBD-4CC2-ADC1-8A5B626CE0CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CEBD91E9-CDBD-4CC2-ADC1-8A5B626CE0CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CEBD91E9-CDBD-4CC2-ADC1-8A5B626CE0CE}.Documentation|Any CPU.ActiveCfg = Release|Any CPU
+		{CEBD91E9-CDBD-4CC2-ADC1-8A5B626CE0CE}.Documentation|Any CPU.Build.0 = Release|Any CPU
+		{CEBD91E9-CDBD-4CC2-ADC1-8A5B626CE0CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CEBD91E9-CDBD-4CC2-ADC1-8A5B626CE0CE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C4D4530F-3194-48D5-9A94-A5C068616471}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C4D4530F-3194-48D5-9A94-A5C068616471}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C4D4530F-3194-48D5-9A94-A5C068616471}.Documentation|Any CPU.ActiveCfg = Release|Any CPU
+		{C4D4530F-3194-48D5-9A94-A5C068616471}.Documentation|Any CPU.Build.0 = Release|Any CPU
+		{C4D4530F-3194-48D5-9A94-A5C068616471}.Release|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{72C60ACB-4804-4584-AD49-00289A89F227} = {8B80380D-BA94-4257-842B-D8BC185EDEA5}
+		{12CAE029-7B8D-4928-8504-28746C36ADB3} = {797080F6-66BB-4B09-A202-1A0704E36503}
+		{D4902CFE-78ED-4BE7-898F-32ACAD46B4AC} = {797080F6-66BB-4B09-A202-1A0704E36503}
+		{CEBD91E9-CDBD-4CC2-ADC1-8A5B626CE0CE} = {28BCEB2C-F4BE-416D-A4FD-A311E99A9EB5}
+		{C4D4530F-3194-48D5-9A94-A5C068616471} = {FAEFFF66-7944-48F4-972A-9A1C13A5C206}
+	EndGlobalSection
+EndGlobal

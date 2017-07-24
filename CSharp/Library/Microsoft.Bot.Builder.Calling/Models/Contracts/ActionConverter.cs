@@ -81,6 +81,14 @@ namespace Microsoft.Bot.Builder.Calling.ObjectModel.Contracts
             {
                 return new Recognize();
             }
+            else if (String.Equals(type, ValidActions.PlaceCallAction, StringComparison.OrdinalIgnoreCase))
+            {
+                return new PlaceCall();
+            }
+            else if (String.Equals(type, ValidActions.TransferAction, StringComparison.OrdinalIgnoreCase))
+            {
+                return new Transfer();
+            }
 
             throw new ArgumentException(String.Format("The given action '{0}' is not supported!", type));
         }

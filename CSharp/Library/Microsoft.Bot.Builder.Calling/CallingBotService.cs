@@ -70,6 +70,16 @@ namespace Microsoft.Bot.Builder.Calling
         public event Func<PlayPromptOutcomeEvent, Task> OnPlayPromptCompleted;
 
         /// <summary>
+        /// Event raised when the bot gets the outcome of Transfer action
+        /// </summary>
+        public event Func<TransferOutcomeEvent, Task> OnTransferCompleted;
+
+        /// <summary>
+        /// Event raised when the bot gets the outcome of PlaceCall action
+        /// </summary>
+        public event Func<PlaceCallOutcomeEvent, Task> OnPlaceCallCompleted;
+
+        /// <summary>
         /// Event raised when the bot gets the outcome of Recognize action
         /// </summary>
         public event Func<RecognizeOutcomeEvent, Task> OnRecognizeCompleted;
@@ -185,6 +195,8 @@ namespace Microsoft.Bot.Builder.Calling
                     return HandleRecordOutcome(receivedConversationResult, receivedConversationResult.OperationOutcome as RecordOutcome, additionalData);
                 case ValidOutcomes.RejectOutcome:
                     return HandleRejectOutcome(receivedConversationResult, receivedConversationResult.OperationOutcome as RejectOutcome);
+                case ValidOutcomes.TransferOutcome:
+                    return HandleTransferOutcome(receivedConversationResult, receivedConversationResult.OperationOutcome as TransferOutcome);
                 case ValidOutcomes.WorkflowValidationOutcome:
                     return HandleWorkflowValidationOutcome(receivedConversationResult, receivedConversationResult.OperationOutcome as WorkflowValidationOutcome);
             }
@@ -246,6 +258,13 @@ namespace Microsoft.Bot.Builder.Calling
         {
             var outcomeEvent = new RejectOutcomeEvent(conversationResult, CreateInitialWorkflow(), rejectOutcome);
             var eventHandler = OnRejectCompleted;
+            return InvokeHandlerIfSet(eventHandler, outcomeEvent);
+        }
+
+        private Task<Workflow> HandleTransferOutcome(ConversationResult conversationResult, TransferOutcome transferOutcome)
+        {
+            var outcomeEvent = new TransferOutcomeEvent(conversationResult, CreateInitialWorkflow(), transferOutcome);
+            var eventHandler = OnTransferCompleted;
             return InvokeHandlerIfSet(eventHandler, outcomeEvent);
         }
 

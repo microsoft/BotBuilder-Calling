@@ -75,7 +75,17 @@ namespace Microsoft.Bot.Builder.Calling.ObjectModel.Contracts
         /// WorkflowValidationOutcome
         /// </summary>
         public const string WorkflowValidationOutcome = "worfklowValidationOutcome";
-      
+
+        /// <summary>
+        /// Attended transfer outcome.
+        /// </summary>
+        public const string TransferOutcome = "transferOutcome";
+
+        /// <summary>
+        /// PlaceCallOutcome
+        /// </summary>
+        public const string PlaceCallOutcome = "placeCallOutcome";
+
         /// <summary>
         /// list of valid outcomes
         /// </summary>
@@ -88,6 +98,8 @@ namespace Microsoft.Bot.Builder.Calling.ObjectModel.Contracts
             RecordOutcome,
             RecognizeOutcome,
             WorkflowValidationOutcome,
+            TransferOutcome,
+            PlaceCallOutcome
         };
 
         public static HashSet<string> Outcomes

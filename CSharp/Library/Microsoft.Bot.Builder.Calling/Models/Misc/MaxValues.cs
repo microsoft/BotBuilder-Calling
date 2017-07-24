@@ -99,6 +99,11 @@ namespace Microsoft.Bot.Builder.Calling.ObjectModel.Misc
         public static readonly uint MediaConfigurationLength = 1024;
 
         /// <summary>
+        /// Max size of ParticipantLegMetadata in answer or join call actions.
+        /// </summary>
+        public static readonly int ParticipantLegMetadataLength = 1024;
+
+        /// <summary>
         /// Timeout downloading media file when constructing speech prompts.
         /// </summary>
         public static readonly TimeSpan FileDownloadTimeout = TimeSpan.FromSeconds(10.0);

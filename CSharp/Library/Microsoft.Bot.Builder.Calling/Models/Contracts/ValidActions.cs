@@ -73,6 +73,16 @@ namespace Microsoft.Bot.Builder.Calling.ObjectModel.Contracts
         public const string RejectAction = "reject";
 
         /// <summary>
+        /// Transfer
+        /// </summary>
+        public const string TransferAction = "transfer";
+
+        /// <summary>
+        /// PlaceCall
+        /// </summary>
+        public const string PlaceCallAction = "placeCall";
+
+        /// <summary>
         /// Dictionary of valid actions and their relative order
         /// +ve order reflect operations after and including call acceptance
         /// -ve order reflect operations pre-call answering . ex: reject/redirect/sequentialRing
@@ -84,12 +94,14 @@ namespace Microsoft.Bot.Builder.Calling.ObjectModel.Contracts
             {PlayPromptAction, 2},
             {RecordAction, 2},
             {RecognizeAction, 2},
+            {TransferAction, 2},
             {HangupAction, 3},
         };
 
         private static readonly string[] exclusiveActions = new string[]
         {
             AnswerAction,
+            PlaceCallAction,
         };
 
         private static readonly string[] allowedMultiActions = new string[]
